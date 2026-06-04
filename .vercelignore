@@ -1,0 +1,8 @@
+scripts/
+01_research_outputs/
+whisper-model.bin
+.claude/
+.plans/
+*.bak
+*.bak2
+src/data/transcripts-cn.json.bak

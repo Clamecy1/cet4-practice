@@ -1,0 +1,43 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+.env
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+.vercel
+
+# Project-specific
+whisper-model.bin
+*.bak
+*.bak2
+01_research_outputs/
+scripts/__pycache__/
+scripts/transcripts/
+scripts/chap_*.json
+scripts/*_sections*.json
+scripts/*_transcript.txt
+scripts/official_transcripts.json
+scripts/transcript-verify-report.json
+scripts/bilibili_*.json
+scripts/ref_ui.png
+/*.mp3
