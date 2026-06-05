@@ -19,7 +19,7 @@ export default defineConfig({
         background_color: '#f8fafc',
         display: 'standalone',
         orientation: 'portrait',
-        start_url: '/',
+        start_url: '/cet4-practice/',
         icons: [
           {
             src: 'pwa-192x192.png',
