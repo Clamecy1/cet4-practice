@@ -11,6 +11,15 @@ import Stats from './pages/Stats'
 import Login from './pages/Login'
 import NotFound from './pages/NotFound'
 
+function GuestRoute({ children }: { children: React.ReactNode }) {
+  const { user, loading } = useAuth()
+  if (loading) {
+    return <div className="max-w-lg mx-auto px-4 py-12 text-center"><p className="text-gray-500">加载中...</p></div>
+  }
+  if (user) return <Navigate to="/" replace />
+  return <>{children}</>
+}
+
 function ProtectedRoute({ children }: { children: React.ReactNode }) {
   const { user, loading } = useAuth()
   if (loading) {
@@ -25,7 +34,7 @@ export default function App() {
     <HashRouter>
       <AuthProvider>
         <Routes>
-          <Route path="/login" element={<Login />} />
+          <Route path="/login" element={<GuestRoute><Login /></GuestRoute>} />
           <Route element={<Layout />}>
             <Route path="/" element={<ProtectedRoute><Home /></ProtectedRoute>} />
             <Route path="/listening/:year/:month/:set" element={<ProtectedRoute><Listening /></ProtectedRoute>} />
