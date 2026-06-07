@@ -1,0 +1,202 @@
+.container {
+  min-height: 100vh;
+  background: var(--color-bg-page);
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-lg);
+}
+
+.loading {
+  padding: 120rpx 40rpx;
+  text-align: center;
+  color: var(--color-text-muted);
+}
+
+.scrollArea {
+  flex: 1;
+  max-height: 900rpx;
+}
+
+// Progress
+.progress {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-md);
+  padding: 0 var(--space-xs);
+}
+
+.progressText {
+  font-size: var(--font-base);
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+.examInfo {
+  font-size: var(--font-sm);
+  color: var(--color-text-muted);
+}
+
+// Chinese card
+.chineseCard {
+  background: var(--color-warning-light);
+  border-radius: var(--radius-xl);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-md);
+  border: 1px solid #fde68a;
+}
+
+.chineseLabel {
+  display: block;
+  font-size: var(--font-sm);
+  color: var(--color-warning);
+  font-weight: 500;
+  margin-bottom: var(--space-md);
+}
+
+.chineseText {
+  font-size: var(--font-lg);
+  color: var(--color-text);
+  line-height: 1.8;
+}
+
+// Input card
+.inputCard {
+  background: var(--color-bg-card);
+  border-radius: var(--radius-xl);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-md);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.inputLabel {
+  display: block;
+  font-size: var(--font-sm);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-md);
+}
+
+.textarea {
+  width: 100%;
+  min-height: 240rpx;
+  padding: var(--space-md);
+  background: var(--color-bg-input);
+  border-radius: var(--radius-lg);
+  font-size: var(--font-base);
+  color: var(--color-text);
+  line-height: 1.6;
+  border: 1px solid var(--color-border);
+}
+
+.userText {
+  font-size: var(--font-base);
+  color: var(--color-text);
+  line-height: 1.6;
+  padding: var(--space-md);
+  background: var(--color-bg-input);
+  border-radius: var(--radius-lg);
+}
+
+// Reference
+.refCard {
+  background: var(--color-success-light);
+  border-radius: var(--radius-xl);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-md);
+  border: 1px solid #a7f3d0;
+}
+
+.refLabel {
+  display: block;
+  font-size: var(--font-sm);
+  color: var(--color-success);
+  font-weight: 500;
+  margin-bottom: var(--space-md);
+}
+
+.refText {
+  font-size: var(--font-base);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+// Feedback
+.feedbackCard {
+  background: var(--color-bg-card);
+  border-radius: var(--radius-xl);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-md);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.scoreRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-md);
+}
+
+.scoreLabel {
+  font-size: var(--font-base);
+  color: var(--color-text-secondary);
+}
+
+.scoreValue {
+  font-size: var(--font-2xl);
+  font-weight: 700;
+}
+
+.scorePass {
+  color: var(--color-success);
+}
+
+.scoreFail {
+  color: var(--color-danger);
+}
+
+.feedbackText {
+  font-size: var(--font-base);
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+}
+
+// Actions
+.actions {
+  padding: var(--space-md) 0 40rpx;
+}
+
+.submitBtn,
+.nextBtn,
+.scoringBtn {
+  width: 100%;
+  padding: 28rpx;
+  border-radius: var(--radius-lg);
+  text-align: center;
+}
+
+.submitBtn,
+.nextBtn {
+  background: var(--color-primary-gradient);
+}
+
+.submitBtnDisabled {
+  opacity: 0.4;
+}
+
+.scoringBtn {
+  background: var(--color-border);
+}
+
+.submitText,
+.nextText {
+  font-size: var(--font-lg);
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.scoringText {
+  font-size: var(--font-lg);
+  color: var(--color-text-muted);
+}

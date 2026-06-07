@@ -1,0 +1,147 @@
+.container {
+  min-height: 100vh;
+  background: var(--color-bg-page);
+  padding: var(--space-lg);
+}
+
+.filterRow {
+  display: flex;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.filterBtn {
+  padding: 14rpx 28rpx;
+  border-radius: var(--radius-full);
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+}
+
+.filterBtnActive {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.filterText {
+  font-size: var(--font-sm);
+  color: var(--color-text-secondary);
+}
+
+.filterTextActive {
+  color: #ffffff;
+}
+
+.empty {
+  padding: 120rpx 40rpx;
+  text-align: center;
+}
+
+.emptyText {
+  font-size: var(--font-lg);
+  color: var(--color-text-muted);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.card {
+  background: var(--color-bg-card);
+  border-radius: var(--radius-xl);
+  padding: var(--space-lg);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-sm);
+}
+
+.cardMeta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.typeTag {
+  font-size: var(--font-xs);
+  padding: 4rpx 14rpx;
+  border-radius: var(--radius-full);
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+}
+
+.typeTagTrans {
+  background: var(--color-accent-light);
+  color: var(--color-accent);
+}
+
+.cardYear {
+  font-size: var(--font-sm);
+  color: var(--color-text-secondary);
+}
+
+.cardTime {
+  font-size: var(--font-xs);
+  color: var(--color-text-muted);
+}
+
+.practiceCount {
+  font-size: var(--font-xs);
+  color: var(--color-text-muted);
+}
+
+.cardText {
+  display: block;
+  font-size: var(--font-base);
+  color: var(--color-text);
+  line-height: 1.6;
+  margin-bottom: var(--space-xs);
+}
+
+.cardAnswer {
+  font-size: var(--font-sm);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-md);
+}
+
+.wrongAnswer {
+  color: var(--color-danger);
+  text-decoration: line-through;
+}
+
+.cardActions {
+  display: flex;
+  gap: var(--space-md);
+}
+
+.redoBtn {
+  flex: 1;
+  padding: var(--space-md);
+  text-align: center;
+  border-radius: var(--radius-md);
+  background: var(--color-primary-light);
+}
+
+.redoText {
+  font-size: var(--font-sm);
+  color: var(--color-primary);
+}
+
+.resolveBtn {
+  flex: 1;
+  padding: var(--space-md);
+  text-align: center;
+  border-radius: var(--radius-md);
+  background: var(--color-success-light);
+}
+
+.resolveText {
+  font-size: var(--font-sm);
+  color: var(--color-success);
+}

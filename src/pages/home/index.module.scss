@@ -1,0 +1,148 @@
+.container {
+  min-height: 100vh;
+  background: #fbf7f0;
+  display: flex;
+  flex-direction: column;
+  padding: 0 32rpx;
+}
+
+// ---- Hero ----
+.hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80rpx;
+}
+
+.title {
+  display: block;
+  font-size: 64rpx;
+  font-weight: 200;
+  color: #3d382b;
+  letter-spacing: 0.12em;
+}
+
+.subtitle {
+  display: block;
+  font-size: 26rpx;
+  color: #b8a990;
+  margin-top: 16rpx;
+  letter-spacing: 0.06em;
+  font-weight: 300;
+}
+
+// ---- Card area ----
+.cardArea {
+  padding-bottom: 60rpx;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  gap: 20rpx;
+}
+
+.card {
+  flex: 1;
+  min-width: 0;
+  background: #ffffff;
+  border-radius: 24rpx;
+  overflow: hidden;
+  box-shadow:
+    0 4px 24px rgba(60, 40, 20, 0.06),
+    0 1px 4px rgba(60, 40, 20, 0.03);
+  transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.cardOpen {
+  box-shadow:
+    0 12px 40px rgba(60, 40, 20, 0.1),
+    0 2px 8px rgba(60, 40, 20, 0.05);
+}
+
+.cardHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 44rpx 24rpx 36rpx;
+  gap: 12rpx;
+  min-height: 200rpx;
+  justify-content: center;
+}
+
+.cardIcon {
+  font-size: 48rpx;
+  line-height: 1;
+}
+
+.cardName {
+  display: block;
+  font-size: 30rpx;
+  font-weight: 500;
+  color: #3d382b;
+}
+
+.cardDesc {
+  display: block;
+  font-size: 22rpx;
+  color: #c4b89e;
+  margin-top: 2rpx;
+}
+
+.tapHint {
+  font-size: 22rpx;
+  color: #d6cdb8;
+  margin-top: 4rpx;
+}
+
+// ---- Expanded body ----
+.cardBody {
+  padding: 0 20rpx 24rpx;
+  max-height: 420rpx;
+  overflow-y: auto;
+}
+
+.yearRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16rpx 16rpx;
+  border-radius: 14rpx;
+  margin-bottom: 2rpx;
+}
+
+.yearRowActive {
+  background: #faf6ef;
+}
+
+.yearLabel {
+  font-size: 26rpx;
+  font-weight: 500;
+  color: #6b6050;
+}
+
+.arrow {
+  font-size: 20rpx;
+  color: #d6cdb8;
+}
+
+.monthGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10rpx;
+  padding: 8rpx 0 18rpx 16rpx;
+}
+
+.examBtn {
+  padding: 12rpx 24rpx;
+  background: #faf6ef;
+  border-radius: 24rpx;
+  border: 1px solid #ede4d5;
+}
+
+.examBtnText {
+  font-size: 24rpx;
+  color: #6b6050;
+}

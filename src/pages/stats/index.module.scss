@@ -1,0 +1,266 @@
+.container {
+  min-height: 100vh;
+  background: var(--color-bg-page);
+  padding: var(--space-lg);
+}
+
+// Overview Grid
+.overviewGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
+}
+
+.overviewCard {
+  flex: 1;
+  min-width: calc(50% - 8rpx);
+  background: var(--color-bg-card);
+  border-radius: var(--radius-xl);
+  padding: var(--space-lg);
+  text-align: center;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.overviewNum {
+  display: block;
+  font-size: var(--font-3xl);
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1.2;
+}
+
+.overviewLabel {
+  display: block;
+  font-size: var(--font-sm);
+  color: var(--color-text-muted);
+  margin-top: var(--space-xs);
+}
+
+// Section
+.section {
+  margin-bottom: var(--space-xl);
+}
+
+.sectionTitle {
+  display: block;
+  font-size: var(--font-lg);
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: var(--space-md);
+}
+
+// Type cards
+.typeCards {
+  display: flex;
+  gap: var(--space-md);
+}
+
+.typeCard {
+  flex: 1;
+  border-radius: var(--radius-xl);
+  padding: var(--space-lg);
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.typeName {
+  display: block;
+  font-size: var(--font-base);
+  font-weight: 500;
+  color: var(--color-text);
+  margin-bottom: 4rpx;
+}
+
+.typeCount {
+  font-size: var(--font-sm);
+  color: var(--color-text-muted);
+}
+
+.typeAcc {
+  display: block;
+  font-size: var(--font-sm);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-sm);
+}
+
+.typeBar {
+  height: 8rpx;
+  background: var(--color-border-light);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.typeFill {
+  height: 100%;
+  border-radius: var(--radius-sm);
+  transition: width 0.5s;
+}
+
+// Heatmap
+.heatmap {
+  display: flex;
+  gap: var(--space-xs);
+  overflow-x: auto;
+  padding-bottom: var(--space-xs);
+}
+
+.heatCell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6rpx;
+}
+
+.heatBlock {
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: var(--radius-sm);
+  background: var(--color-border-light);
+}
+
+.heatActive {
+  background: #a7f3d0;
+}
+
+.heatToday {
+  border: 3rpx solid var(--color-primary);
+}
+
+.heatLabel {
+  font-size: 20rpx;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+// Matrix
+.matrixRow {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: var(--space-md);
+  gap: var(--space-md);
+}
+
+.matrixYear {
+  font-size: var(--font-sm);
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  width: 80rpx;
+  padding-top: var(--space-xs);
+}
+
+.matrixMonths {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.matrixCell {
+  flex: 1;
+  min-width: 120rpx;
+  background: var(--color-bg-card);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md);
+  text-align: center;
+  border: 1px solid var(--color-border);
+}
+
+.matrixMonth {
+  display: block;
+  font-size: var(--font-sm);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-xs);
+}
+
+.matrixDots {
+  display: flex;
+  gap: var(--space-xs);
+  justify-content: center;
+}
+
+.dot {
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: var(--radius-full);
+}
+
+.dotDone {
+  background: var(--color-primary);
+}
+
+.dotPending {
+  background: var(--color-border);
+}
+
+// Recent sessions
+.recentList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.recentItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color-bg-card);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md) var(--space-lg);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.recentLeft {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.recentType {
+  font-size: var(--font-xl);
+}
+
+.recentExam {
+  font-size: var(--font-base);
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.recentDate {
+  font-size: var(--font-xs);
+  color: var(--color-text-muted);
+}
+
+.recentRight {
+  text-align: right;
+}
+
+.recentScore {
+  display: block;
+  font-size: var(--font-base);
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.recentAcc {
+  font-size: var(--font-xs);
+}
+
+.recentAccGood {
+  color: var(--color-success);
+}
+
+.recentAccBad {
+  color: var(--color-danger);
+}
+
+.emptyText {
+  font-size: var(--font-base);
+  color: var(--color-text-muted);
+  padding: 40rpx;
+  text-align: center;
+  display: block;
+}

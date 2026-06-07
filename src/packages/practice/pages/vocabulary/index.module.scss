@@ -1,0 +1,126 @@
+.container {
+  min-height: 100vh;
+  background: var(--color-bg-page);
+  padding: var(--space-lg);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-lg);
+}
+
+.count {
+  font-size: var(--font-base);
+  color: var(--color-text-secondary);
+}
+
+.addBtn {
+  padding: 12rpx 24rpx;
+  border-radius: var(--radius-full);
+  background: var(--color-primary);
+}
+
+.addBtnText {
+  font-size: var(--font-sm);
+  color: #ffffff;
+}
+
+.addPanel {
+  background: var(--color-bg-card);
+  border-radius: var(--radius-xl);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-lg);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.addInput {
+  width: 100%;
+  padding: 18rpx var(--space-lg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-size: var(--font-md);
+  margin-bottom: var(--space-md);
+  background: var(--color-bg-input);
+}
+
+.addConfirmBtn {
+  width: 100%;
+  padding: 18rpx;
+  border-radius: var(--radius-md);
+  background: var(--color-primary);
+  text-align: center;
+}
+
+.addConfirmDisabled {
+  opacity: 0.4;
+}
+
+.addConfirmText {
+  font-size: var(--font-md);
+  color: #ffffff;
+}
+
+.empty {
+  padding: 120rpx 40rpx;
+  text-align: center;
+}
+
+.emptyText {
+  font-size: var(--font-lg);
+  color: var(--color-text-muted);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.card {
+  background: var(--color-bg-card);
+  border-radius: var(--radius-xl);
+  padding: var(--space-lg);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-sm);
+}
+
+.word {
+  font-size: var(--font-xl);
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.deleteBtn {
+  padding: 6rpx 18rpx;
+  border-radius: var(--radius-md);
+  background: var(--color-danger-light);
+}
+
+.deleteText {
+  font-size: var(--font-sm);
+  color: var(--color-danger);
+}
+
+.translation {
+  display: block;
+  font-size: var(--font-base);
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.context {
+  display: block;
+  font-size: var(--font-sm);
+  color: var(--color-text-muted);
+  margin-top: var(--space-xs);
+}
