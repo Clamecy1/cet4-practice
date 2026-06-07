@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CET-4 听力翻译刷题器</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Noto+Sans+SC:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: linear-gradient(135deg, #f5f0e6 0%, #fbf7f0 50%, #f0ebe0 100%);
+      color: #3d3522;
+      font-family: 'Noto Sans SC', 'Inter', system-ui, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 24px;
+      padding: 48px 40px;
+      max-width: 560px;
+      width: 100%;
+      box-shadow: 0 4px 32px rgba(60, 40, 20, 0.08), 0 0 0 1px rgba(60, 40, 20, 0.04);
+      text-align: center;
+    }
+    .icon {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 24px;
+      background: linear-gradient(135deg, #f5f0e6, #e8dcc8);
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .icon svg { width: 36px; height: 36px; color: #8a7560; }
+    h1 {
+      font-size: 26px;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      margin-bottom: 12px;
+    }
+    .subtitle {
+      font-size: 14px;
+      color: #8a7560;
+      line-height: 1.7;
+      margin-bottom: 32px;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-bottom: 36px;
+    }
+    .feature {
+      background: #fbf7f0;
+      border: 1px solid #e5dcc8;
+      border-radius: 12px;
+      padding: 10px 18px;
+      font-size: 13px;
+      color: #6b5d48;
+    }
+    .links {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 28px;
+      border-radius: 12px;
+      font-size: 15px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .btn-primary {
+      background: #3d3522;
+      color: #fbf7f0;
+    }
+    .btn-primary:hover { background: #5a4f38; transform: translateY(-2px); }
+    .btn-outline {
+      border: 1.5px solid #e5dcc8;
+      color: #3d3522;
+    }
+    .btn-outline:hover { background: #fbf7f0; transform: translateY(-2px); }
+    .footer {
+      margin-top: 32px;
+      font-size: 12px;
+      color: #c4b8a0;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="icon">
+      <svg fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+        <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+        <path d="M8 10.5 12 8l4 2.5v6L12 19l-4-2.5z"/>
+        <path d="M12 8v11"/>
+        <path d="M8 10.5 12 13l4-2.5"/>
+      </svg>
+    </div>
+    <h1>CET-4 听力翻译刷题器</h1>
+    <p class="subtitle">
+      英语四级全套练习工具 · 微信小程序<br/>
+      听力真题训练 / 翻译 AI 评分 / 词汇练习 / 错题回顾 / 学习统计
+    </p>
+    <div class="features">
+      <span class="feature">🎧 听力练习</span>
+      <span class="feature">📝 翻译 + AI 评分</span>
+      <span class="feature">📖 词汇训练</span>
+      <span class="feature">❌ 错题回顾</span>
+      <span class="feature">📊 学习统计</span>
+    </div>
+    <div class="links">
+      <a href="https://github.com/Clamecy1/cet4-practice" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+        <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        GitHub 源码
+      </a>
+    </div>
+    <p class="footer">基于 Taro 4.x · React 18 · TypeScript · Supabase</p>
+  </div>
+</body>
+</html>
